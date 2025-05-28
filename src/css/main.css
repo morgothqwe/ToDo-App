@@ -1,0 +1,127 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+/* VARIABLES */
+:root {
+  --color-bg: #1a202c;
+  --color-primary: #63b3ed;
+  --color-secondary: #2d3748;
+  --color-highlight: #4a5568;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #a0aec0;
+  --color-success: #48bb78;
+  --color-error: #f56565;
+}
+
+/* Style for completed tasks */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* LAYOUT */
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.4rem;
+}
+
+.todo-input-wrapper {
+  padding: 4.8rem;
+  background-color: var(--color-secondary);
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.6rem;
+  height: 3.2rem;
+}
+
+.todo-input {
+  min-width: 25.6rem;
+  font-size: 1.4rem;
+  padding-inline: 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: var(--color-text-primary);
+  background-color: var(--color-highlight);
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.todo-input::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 1;
+}
+
+.todo-input:invalid {
+  background-color: var(--color-error);
+}
+
+.todo-submit-btn {
+  align-self: center;
+  cursor: pointer;
+}
+
+.todo-add-icon {
+  font-size: 3.2rem;
+  color: var(--color-primary);
+}
+
+.todo-list-wrapper {
+  min-width: 25.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: auto 24.4rem auto;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.6rem 4.8rem;
+  background-color: var(--color-secondary);
+}
+
+.todo-label,
+.ph-x {
+  font-size: 1.4rem;
+}
+
+.ph-x {
+  color: var(--color-error);
+}
+
+.todo-checkbox {
+  width: 1.4rem;
+  height: 1.4rem;
+  accent-color: var(--color-success);
+  cursor: pointer;
+}
+
+.todo-delete-btn {
+  cursor: pointer;
+}

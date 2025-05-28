@@ -1,0 +1,14 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "to-do app",
+  "license": "ISC",
+  "author": "keiwan",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
