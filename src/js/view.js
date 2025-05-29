@@ -5,7 +5,7 @@ class View {
   _taskListWrapper = document.querySelector(".todo-list-wrapper");
 
   addHandlerAddTask(handler) {
-    this._submitTask.addEventListener("submit", (e) => {
+    this._submitTask.addEventListener("click", (e) => {
       e.preventDefault();
       const taskValue = this._inputTask.value;
       if (!taskValue || taskValue.length < 3) return;
